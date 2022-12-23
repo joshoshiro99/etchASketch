@@ -9,13 +9,15 @@ function createGrid(size){
         newContainer = document.createElement("div");
         newContainer.className = 'container';
         newContainer.style.display = 'flex';
+        newContainer.style.flexGrow = 1;
         gridContainer.appendChild(newContainer);
 
         for(let i = 0; i < size; i++){
             newDiv = document.createElement("div");
             newDiv.style.borderStyle='solid';
-            newDiv.style.height='200px';
-            newDiv.style.width='200px';
+            newDiv.style.flexGrow = 1;
+            //newDiv.style.height='200px';
+            //newDiv.style.width='200px';
             newContainer.appendChild(newDiv);
         }
     }
