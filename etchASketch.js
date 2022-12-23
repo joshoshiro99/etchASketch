@@ -1,11 +1,22 @@
-const container= document.querySelector('.container');
-createGrid(16);
+const gridContainer= document.querySelector('.gridContainer');
+createGrid(10);
 
 
 function createGrid(size){
     let newDiv;
-    for(let i = 0; i < size; i++){
-        newDiv = document.createElement("div");
-        container.appendChild(newDiv);
+    let newContainer;
+    for(let containers=0; containers<size;containers++){
+        newContainer = document.createElement("div");
+        newContainer.className = 'container';
+        newContainer.style.display = 'flex';
+        gridContainer.appendChild(newContainer);
+
+        for(let i = 0; i < size; i++){
+            newDiv = document.createElement("div");
+            newDiv.style.borderStyle='solid';
+            newDiv.style.height='200px';
+            newDiv.style.width='200px';
+            newContainer.appendChild(newDiv);
+        }
     }
 }
