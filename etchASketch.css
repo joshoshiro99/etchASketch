@@ -1,24 +1,50 @@
 .gridContainer {
-    height: 500px;
-    width: 500px;
+    height: 37em;
+    width: 37em;
     display: flex;
     flex-direction: column;
     border-style: dotted;
     border-width: 1px;
+    background-color: lightgray;
 }
-
 
 .gridItem {
    border-style: dashed;
    border-width: 0.1px;
 }
 
+.footer { 
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    justify-content: center;
+    gap: 2em;
+}
+
+.knobs { 
+    background-color: lightgray;
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: .25em;
+}
+
+#Logo {
+    font-family: fantasy;
+    color: gold;
+    font-size: 5em;
+    margin: 0;
+    flex-grow: 2;
+    align-self: center;
+}
 
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    background-color: rgb(227, 7, 7);
 }
 
 .header {
@@ -31,4 +57,9 @@ body {
 .adjustmentItems {
     display: flex;
     gap: 75px;
+}
+
+.slider {
+    height: 2em;
+    width: 50em;
 }
