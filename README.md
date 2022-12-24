@@ -8,9 +8,13 @@ x Set up a “hover” effect so that the grid divs change color when your mouse
 
 x Add a button to the top of the screen that will send the user a popup asking for the number of squares per side for the new grid. Once entered, the existing grid should be removed and a new grid should be generated in the same total space as before 
 
-o Add a butoon that toggles the 'grid' functionality 
+x Add a butoon that toggles the 'grid' functionality 
 
 x Zoom functionality 
+
+o Etch-a-Sketch Styling
+
+o Resize board with screensize
 
 
 # Skills Demonstrated:
