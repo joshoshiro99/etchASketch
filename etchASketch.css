@@ -3,5 +3,6 @@
     width: 500px;
     display: flex;
     flex-direction: column;
-    border-style: solid;
+    border-style: dotted;
+    border-width: 1px;
 }

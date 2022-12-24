@@ -1,5 +1,5 @@
 const gridContainer= document.querySelector('.gridContainer');
-createGrid(10);
+createGrid(200);
 
 
 function createGrid(size){
@@ -14,11 +14,14 @@ function createGrid(size){
 
         for(let i = 0; i < size; i++){
             newDiv = document.createElement("div");
-            newDiv.style.borderStyle='solid';
+            newDiv.className = 'gridItem';
+            newDiv.addEventListener('mouseover',changeBackgroundColor);
             newDiv.style.flexGrow = 1;
-            //newDiv.style.height='200px';
-            //newDiv.style.width='200px';
             newContainer.appendChild(newDiv);
         }
     }
+}
+
+function changeBackgroundColor(){
+    this.style.backgroundColor = 'black';
 }
