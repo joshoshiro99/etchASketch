@@ -1,14 +1,24 @@
 # etchASketch
 Create a grid with JS that will change color when one hovers over with the mouse 
 
-Project Goals: 
-o Create a webpage with a 16x16 grid of square divs with JS
+# Project Goals: 
+x Create a webpage with a 16x16 grid of square divs with JS
 
-o Set up a “hover” effect so that the grid divs change color when your mouse passes over them, leaving a (pixelated) trail through your grid like a pen would.
+x Set up a “hover” effect so that the grid divs change color when your mouse passes over them, leaving a (pixelated) trail through your grid like a pen would.
 
-o Add a button to the top of the screen that will send the user a popup asking for the number of squares per side for the new grid. Once entered, the existing grid should be removed and a new grid should be generated in the same total space as before 
+x Add a button to the top of the screen that will send the user a popup asking for the number of squares per side for the new grid. Once entered, the existing grid should be removed and a new grid should be generated in the same total space as before 
 
-Skills Demonstrated:
+o Add a butoon that toggles the 'grid' functionality 
+
+o Zoom functionality 
+--keyboard input 
+    or
+--mousepad zoom
+    or
+--click and drag
+
+
+# Skills Demonstrated:
 o ability to manipulate the DOM with Javascript
 
 o add event handlers to buttons
