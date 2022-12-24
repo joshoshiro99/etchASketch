@@ -6,7 +6,15 @@
         <link rel="stylesheet" href="etchASketch.css">
     </head>
     <body>
-        <p>Etch-A-Sketch</p>
+        <div class="header">
+            <p>Etch-A-Sketch</p>
+            <div class="adjustmentItems">
+                <button>Reset</button>
+                <p id="sliderText">no.</p>
+                <input type="range" min="10" max="100" value="50" class="slider">
+            </div>
+        </div>
+        
         <div class="gridContainer"></div>
     </body>
     <script src="etchASketch.js"></script>
