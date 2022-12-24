@@ -1,3 +1,35 @@
+/*Head*/
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.adjustmentItems {
+    display: flex;
+    gap: 75px;
+}
+
+.sliderContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider {
+    height: 2em;
+    width: 50em;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(227, 7, 7);
+}
+
+/*Grid*/
 .gridContainer {
     height: 37em;
     width: 37em;
@@ -13,6 +45,7 @@
    border-width: 0.1px;
 }
 
+/*Footer*/
 .footer { 
     display: flex;
     flex-direction: row;
@@ -39,27 +72,5 @@
     align-self: center;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    background-color: rgb(227, 7, 7);
-}
 
-.header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
-.adjustmentItems {
-    display: flex;
-    gap: 75px;
-}
-
-.slider {
-    height: 2em;
-    width: 50em;
-}
