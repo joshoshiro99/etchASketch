@@ -4,11 +4,16 @@ sliderItem.addEventListener('input',sliderChange);
 
 let SIZE = sliderItem.value;
 
-let clearButton = document.querySelector('button');
+let clearButton = document.querySelector('#resetButton');
 clearButton.addEventListener('click',clearGrid);
 
 let sliderTextItem = document.querySelector('#sliderText');
 sliderTextItem.textContent=SIZE.toString();
+
+let gridToggleItem = document.querySelector('#gridToggle');
+gridToggleItem.addEventListener('click',toggleGrid);
+
+let isGridActive=true;
 
 //initial creation of grid 
 const gridContainer= document.querySelector('.gridContainer');
@@ -56,4 +61,18 @@ function sliderChange(){
     let sliderTextItem = document.querySelector('#sliderText');
     sliderTextItem.textContent=SIZE.toString();
     clearGrid(gridContainer);
+}
+
+function toggleGrid(){
+    
+    let gridItems = document.querySelectorAll('.gridItem');
+    gridItems.forEach(gridItem => {
+        if(isGridActive){
+            gridItem.style.borderStyle = 'none';
+        }
+        else { 
+            gridItem.style.borderStyle = 'dotted';
+        }
+    });
+    isGridActive = !isGridActive;
 }

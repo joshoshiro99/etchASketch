@@ -10,7 +10,7 @@ x Add a button to the top of the screen that will send the user a popup asking f
 
 o Add a butoon that toggles the 'grid' functionality 
 
-o Zoom functionality 
+x Zoom functionality 
 
 
 # Skills Demonstrated:

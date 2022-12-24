@@ -30,5 +30,5 @@ body {
 
 .adjustmentItems {
     display: flex;
-    gap: 150px;
+    gap: 75px;
 }
