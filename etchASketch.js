@@ -56,5 +56,4 @@ function sliderChange(){
     let sliderTextItem = document.querySelector('#sliderText');
     sliderTextItem.textContent=SIZE.toString();
     clearGrid(gridContainer);
-    createGrid(SIZE);
 }
